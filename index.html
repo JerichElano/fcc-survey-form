@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+        <h1 id="title">A Survey Form for Fur Parents</h1>
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolores neque sint recusandae doloremque beatae blanditiis nulla corrupti quam. Doloremque illo laboriosam porro ipsa at illum voluptatum, qui sunt non!</p>
+
+        <form action="#" method="post" id="survey-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <!-- Name Input -->
+                <label for="name" id="name-label">Name:</label>
+                <input required id="name" name="name" placeholder="Juan dela Cuz" type="text">
+
+                <!-- Email Input -->
+                <label for="email" id="email-label">Email:</label>
+                <input required id="email" name="email" placeholder="juandelacruz@email.com" type="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <!-- Number Input -->
+                <label for="number" id="number-label">How many pets you have?</label>
+                <input id="number" max="100" min="0" name="number" placeholder="12" type="number">
+
+                <!-- Dropdown -->
+                <label for="dropdown-label">Do you own a cat?</label>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value="">Please choose</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <!-- Radio Buttons -->
+                <p>Which do you prefer?</p>
+                <input id="cat" name="radio" type="radio" value="Cat">
+                <label for="cat">Cat</label>
+
+                <input id="dog" name="radio" type="radio" value="Dog">
+                <label for="dog">Dog</label>
+                            
+                <input id="both" name="radio" type="radio" value="Both">
+                <label for="both">Both</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Pet Care</legend>
+                <!-- Number Input -->
+                <label for="feed-times">How many times a day do you feed your pets?</label>
+                <input id="feed-times" max="10" min="0" name="feed-times" placeholder="2" type="number">
+
+                <!-- Checkboxes -->
+                <p>What do you feed your pets?</p>
+                <input id="dry" name="checkbox" type="checkbox" value="dried-food">
+                <label for="dry">Dried food</label>
+                
+                <input id="wet" name="checkbox" type="checkbox" value="wet-food">
+                <label for="wet">Wet food</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Suggestions</legend>
+                <!-- Textarea -->
+                <label for="comments">Do you have any tips for taking care of your fur babies?</label>
+                <textarea cols="50" id="comments" name="comments" placeholder="Enter your suggestions here..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <!-- Button -->
+                <button id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
